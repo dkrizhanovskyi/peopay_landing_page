@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Page xmlns="http://schemas.nativescript.org/tns.xsd" navigatingTo="onNavigatingTo" class="bg-gray-100">
+    <ActionBar title="PayPeo" class="bg-purple-600 text-white">
+        <NavigationButton visibility="collapsed" />
+        <ActionItem tap="onMenu" ios.position="right" android.position="actionBar">
+            <Label text="&#xf0c9;" class="fas text-xl" />
+        </ActionItem>
+    </ActionBar>
+
+    <ScrollView>
+        <StackLayout class="p-4">
+            <!-- Hero Section -->
+            <Label text="Welcome to PayPeo" class="text-3xl font-bold text-purple-800 mb-2" />
+            <Label text="Decentralized Payments Made Simple" class="text-lg text-gray-600 mb-6" textWrap="true" />
+
+            <!-- Quick Actions -->
+            <GridLayout columns="*, *" rows="auto" class="mb-6">
+                <StackLayout col="0" class="p-2">
+                    <Button text="Send Money" tap="{{ onSendMoney }}" class="bg-purple-600 text-white p-4 rounded-lg" />
+                </StackLayout>
+                <StackLayout col="1" class="p-2">
+                    <Button text="Receive" tap="{{ onReceive }}" class="bg-purple-600 text-white p-4 rounded-lg" />
+                </StackLayout>
+            </GridLayout>
+
+            <!-- Features Section -->
+            <Label text="Features" class="text-2xl font-bold text-purple-800 mb-4" />
+            <StackLayout class="mb-6">
+                <Label text="🌍 Global Payments" class="text-lg font-semibold mb-2" />
+                <Label text="Send money anywhere, instantly" class="text-gray-600" textWrap="true" />
+                
+                <Label text="🔒 Secure Transactions" class="text-lg font-semibold mt-4 mb-2" />
+                <Label text="Built on blockchain technology" class="text-gray-600" textWrap="true" />
+                
+                <Label text="💰 DeFi Integration" class="text-lg font-semibold mt-4 mb-2" />
+                <Label text="Access staking and yield farming" class="text-gray-600" textWrap="true" />
+            </StackLayout>
+
+            <!-- Community Section -->
+            <Label text="Join Our Community" class="text-2xl font-bold text-purple-800 mb-4" />
+            <Button text="GitHub Repository" tap="{{ onGitHubTap }}" class="bg-gray-800 text-white p-4 rounded-lg mb-4" />
+            <Button text="Get Involved" tap="{{ onGetInvolved }}" class="bg-purple-600 text-white p-4 rounded-lg" />
+        </StackLayout>
+    </ScrollView>
+</Page>

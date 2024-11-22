@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Page xmlns="http://schemas.nativescript.org/tns.xsd" navigatingTo="onNavigatingTo" class="bg-gray-100">
+    <ActionBar title="About PayPeo" class="bg-purple-600 text-white">
+        <NavigationButton />
+    </ActionBar>
+
+    <ScrollView>
+        <StackLayout class="p-4">
+            <!-- Mission Statement -->
+            <Label text="Our Mission" class="text-3xl font-bold text-purple-800 mb-4" />
+            <Label text="PayPeo bridges the gap between cryptocurrencies and mobile money systems, empowering the underbanked through decentralized finance." 
+                   class="text-lg text-gray-600 mb-6" textWrap="true" />
+
+            <!-- Core Features -->
+            <Label text="Core Features" class="text-2xl font-bold text-purple-800 mb-4" />
+            <GridLayout rows="auto, auto" columns="*, *" class="mb-6">
+                <!-- Feature 1 -->
+                <StackLayout row="0" col="0" class="p-2 bg-white rounded-lg m-1 shadow-sm">
+                    <Label text="💱" class="text-3xl text-center" />
+                    <Label text="Crypto-Mobile" class="font-semibold text-center" />
+                    <Label text="Seamless transactions between crypto and mobile money" 
+                           class="text-sm text-gray-600 text-center" textWrap="true" />
+                </StackLayout>
+                <!-- Feature 2 -->
+                <StackLayout row="0" col="1" class="p-2 bg-white rounded-lg m-1 shadow-sm">
+                    <Label text="🏦" class="text-3xl text-center" />
+                    <Label text="DeFi Savings" class="font-semibold text-center" />
+                    <Label text="Earn yields through staking and farming" 
+                           class="text-sm text-gray-600 text-center" textWrap="true" />
+                </StackLayout>
+                <!-- Feature 3 -->
+                <StackLayout row="1" col="0" class="p-2 bg-white rounded-lg m-1 shadow-sm">
+                    <Label text="👥" class="text-3xl text-center" />
+                    <Label text="P2P Payments" class="font-semibold text-center" />
+                    <Label text="Direct transfers between users" 
+                           class="text-sm text-gray-600 text-center" textWrap="true" />
+                </StackLayout>
+                <!-- Feature 4 -->
+                <StackLayout row="1" col="1" class="p-2 bg-white rounded-lg m-1 shadow-sm">
+                    <Label text="🌍" class="text-3xl text-center" />
+                    <Label text="Global Access" class="font-semibold text-center" />
+                    <Label text="Borderless financial services" 
+                           class="text-sm text-gray-600 text-center" textWrap="true" />
+                </StackLayout>
+            </GridLayout>
+
+            <!-- Roadmap Button -->
+            <Button text="View Roadmap" tap="{{ onViewRoadmap }}" 
+                    class="bg-purple-600 text-white p-4 rounded-lg mb-4" />
+        </StackLayout>
+    </ScrollView>
+</Page>
