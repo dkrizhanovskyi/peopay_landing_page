@@ -13,7 +13,7 @@ export default function Header() {
           <div className="flex items-center space-x-2">
             <Wallet className="h-8 w-8 text-indigo-600" />
             <span className="text-2xl font-bold bg-gradient-to-r from-indigo-600 to-purple-600 bg-clip-text text-transparent">
-              PayPeo
+              PeoPay
             </span>
           </div>
 
@@ -27,6 +27,9 @@ export default function Header() {
             </a>
             <a href="#community" className="text-gray-700 hover:text-indigo-600 transition-colors">
               Community
+            </a>
+            <a href="/privacy" className="text-gray-700 hover:text-indigo-600 transition-colors">
+              Privacy Policy
             </a>
             <a
               href="https://github.com/dkrizhanovskyi/peopay_landing_page"
@@ -71,6 +74,13 @@ export default function Header() {
                 onClick={toggleMenu}
               >
                 Community
+              </a>
+              <a
+                href="/privacy"
+                className="text-gray-700 hover:text-indigo-600 transition-colors"
+                onClick={toggleMenu}
+              >
+                Privacy Policy
               </a>
               <a
                 href="https://github.com/dkrizhanovskyi/peopay_landing_page"

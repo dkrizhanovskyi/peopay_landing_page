@@ -12,10 +12,10 @@ export default function Footer() {
           <div className="space-y-4">
             <div className="flex items-center space-x-2">
               <Wallet className="h-8 w-8 text-indigo-400" />
-              <span className="text-2xl font-bold text-white">PayPeo</span>
+              <span className="text-2xl font-bold text-white">PeoPay</span>
             </div>
             <p className="text-gray-400">
-              Bridging the gap between cryptocurrencies and mobile money systems.
+              Empowering people through decentralized financial solutions.
             </p>
           </div>
 
@@ -63,10 +63,30 @@ export default function Footer() {
             </ul>
           </div>
 
-          {/* Contact Column */}
+          {/* Legal Column */}
           <div>
-            <h3 className="text-lg font-semibold mb-4">Connect</h3>
-            <div className="flex space-x-4">
+            <h3 className="text-lg font-semibold mb-4">Legal</h3>
+            <ul className="space-y-2">
+              <li>
+                <a href="/privacy" className="text-gray-400 hover:text-white transition-colors">
+                  Privacy Policy
+                </a>
+              </li>
+              <li>
+                <a href="#" className="text-gray-400 hover:text-white transition-colors">
+                  Terms of Service
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div className="border-t border-gray-800 pt-8">
+          <div className="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
+            <p className="text-gray-400">
+              © {currentYear} PeoPay. All rights reserved.
+            </p>
+            <div className="flex space-x-6">
               <a
                 href="https://github.com/dkrizhanovskyi/peopay_landing_page"
                 target="_blank"
@@ -75,33 +95,11 @@ export default function Footer() {
               >
                 <Github className="h-6 w-6" />
               </a>
-              <a
-                href="#"
-                className="text-gray-400 hover:text-white transition-colors"
-              >
+              <a href="#" className="text-gray-400 hover:text-white transition-colors">
                 <Twitter className="h-6 w-6" />
               </a>
-              <a
-                href="#"
-                className="text-gray-400 hover:text-white transition-colors"
-              >
+              <a href="#" className="text-gray-400 hover:text-white transition-colors">
                 <Linkedin className="h-6 w-6" />
-              </a>
-            </div>
-          </div>
-        </div>
-
-        <div className="border-t border-gray-800 pt-8">
-          <div className="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
-            <p className="text-gray-400">
-              © {currentYear} PayPeo. All rights reserved.
-            </p>
-            <div className="flex space-x-6">
-              <a href="#" className="text-gray-400 hover:text-white transition-colors">
-                Privacy Policy
-              </a>
-              <a href="#" className="text-gray-400 hover:text-white transition-colors">
-                Terms of Service
               </a>
             </div>
           </div>
